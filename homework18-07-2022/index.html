@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div style="margin-left: 50%; margin-top: 200px" id="inputs-container">
+      <label for="name-input">name:</label>
+      <input id="name-input" type="text" />
+      <br /><br />
+      <label for="age-input">age:</label>
+      <input id="age-input" type="number" />
+      <br /><br />
+      <label for="color-input">color:</label>
+      <input id="color-input" type="color" />
+      <br /><br />
+      <label for="country-input">country</label>
+      <select name="country" id="country-input">
+        <option class="d-none" value=""></option>
+        <option value="israel">israel</option>
+        <option value="usa">USA</option>
+        <option value="barcelona">Barcelona</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br /><br />
+
+     <label for="female">female</label><br />
+      <input type="radio" id="female-input" name="gender" value="female" />
+      <br />
+
+    <label for="male">male</label><br />
+      <input type="radio" id="male-input" name="gender" value="male" checked /> <br />
+
+      <button onclick="handleButton()">Submit</button>
+      <button onclick="handleReset()">Reset</button>
+    </div>
+
+
+    <div id="cards-container">
+       <div class="card " style="width: 18rem; background-color: lightblue">
+        <div class="card-body">
+          <h5 class="card-title">Name </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item years">age</li>
+          <li class="list-group-item state">country</li>
+          <li class="list-group-item gender">gender</li>
+         
+        </ul>
+      </div> 
+      
+    </div>
+ 
+    </div>
+  </body>
+</html>
